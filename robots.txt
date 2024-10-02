@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theocrsb.github.io/sitemap.xml
+
