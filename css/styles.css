@@ -3,8 +3,9 @@
 /* Global Styles */
 body {
   margin: 0;
+  height: 100vh;
   overflow: hidden;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   background-color: #dff2ff;
   color: #333;
 }
@@ -21,6 +22,7 @@ ul {
 
 /* Navigation Bar */
 nav {
+  height: 10vh;
   background: transparent;
   position: sticky;
   top: 0;
@@ -30,7 +32,7 @@ nav {
 
 nav ul {
   display: flex;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 nav li {
@@ -44,7 +46,7 @@ nav a {
 
 nav a:hover,
 nav a[aria-current="page"] {
-  color: #007BFF;
+  color: #007bff;
   text-decoration: underline;
 }
 
@@ -53,18 +55,21 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  padding: 20px;
+  height: 80vh;
 }
 
 .home-main {
-  min-height: calc(80vh + 63px);
+  height: calc(80vh + 10vh);
 }
 
 .home-section,
 .about-section,
 .contact-section {
-  max-width: 800px;
+  max-width: 1000px;
+}
+
+.about-section {
+  margin-inline: 20px;
 }
 
 .home-section h1 {
@@ -95,8 +100,9 @@ main {
   transition: color 0.3s ease;
 }
 
-.social-links, a:hover {
-  color: #007BFF;
+.social-links,
+a:hover {
+  color: #007bff;
 }
 
 .social-links img {
@@ -106,15 +112,22 @@ main {
 
 /* Footer */
 footer {
+  height: 10vh;
   text-align: center;
-  padding: 20px 0;
   background: transparent;
   font-size: 0.9rem;
+  p {
+    padding-top: 20px;
+  }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-.about-main {
+  p {
+    font-size: 0.75rem;
+  }
+
+  .about-main {
     min-height: calc(80vh - 69px);
   }
 
@@ -131,4 +144,3 @@ footer {
     gap: 20px;
   }
 }
-
