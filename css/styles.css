@@ -110,6 +110,18 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.projects-main {
+  display: flex;
+  flex-direction: column;
+}
+.projects-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: scroll;
+}
+
 /* Footer */
 footer {
   height: 10vh;
