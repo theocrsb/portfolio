@@ -75,6 +75,7 @@ main {
 .home-section h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .links {
@@ -154,5 +155,14 @@ footer {
   .social-links {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media (max-width: 1512px) {
+  .projects-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px;
   }
 }
