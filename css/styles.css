@@ -6,7 +6,7 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: "Fira Code", monospace;
-  background-color: #dff2ff;
+  background-color: rgb(163, 186, 192);
   color: #333;
 }
 
@@ -46,7 +46,7 @@ nav a {
 
 nav a:hover,
 nav a[aria-current="page"] {
-  color: #007bff;
+  font-weight: 900;
   text-decoration: underline;
 }
 
@@ -103,7 +103,7 @@ main {
 
 .social-links,
 a:hover {
-  color: #007bff;
+  font-weight: 900;
 }
 
 .social-links img {
