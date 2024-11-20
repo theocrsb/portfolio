@@ -5,13 +5,22 @@ body {
   margin: 0;
   height: 100vh;
   overflow: hidden;
-  font-family: "Fira Code", monospace;
+  font-family: "Courier New", Courier;
   background-color: rgb(163, 186, 192);
   color: #333;
 }
 
 a {
   color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: 900;
+}
+
+a[aria-current] {
+  font-weight: 900;
 }
 
 ul {
@@ -42,12 +51,6 @@ nav li {
 nav a {
   font-size: 1.1rem;
   transition: color 0.3s ease;
-}
-
-nav a:hover,
-nav a[aria-current="page"] {
-  font-weight: 900;
-  text-decoration: underline;
 }
 
 /* Main Sections */
@@ -99,11 +102,6 @@ main {
   align-items: center;
   color: #333;
   transition: color 0.3s ease;
-}
-
-.social-links,
-a:hover {
-  font-weight: 900;
 }
 
 .social-links img {
